@@ -336,3 +336,94 @@ input[type="text"], input[type="email"], select, textarea {
 .card-headline:hover {
     color: #1c66d9;
 }
+
+.main-footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 50px 0 20px 0;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-brand {
+    flex: 1;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    font-size: 12px;
+    color: #111679;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    color: #111679;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer-info-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-info-links a {
+    text-decoration: none;
+    color: #111679;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.footer-columns {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+}
+
+.footer-col h3 {
+    color: #111679;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-col a {
+    display: block;
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.footer-bottom-bar {
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.footer-bottom-bar a, .footer-bottom-bar span {
+    color: #888;
+    text-decoration: none;
+}
