@@ -427,3 +427,78 @@ input[type="text"], input[type="email"], select, textarea {
     color: #888;
     text-decoration: none;
 }
+
+/* TABLET: Pantallas menores a 1024px */
+@media (max-width: 1023px) {
+    .container {
+        max-width: 95%;
+    }
+    
+    h1 {
+        font-size: 2.2em;
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr); /* Pasa de 3 columnas a 2 */
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+    }
+}
+
+/* MOBILE: Pantallas menores a 768px */
+@media (max-width: 767px) {
+    /* Ajustes de Header */
+    .sub-nav {
+        display: none; /* Se oculta para limpiar la pantalla en móvil */
+    }
+
+    /* Ajustes de Títulos */
+    h1 {
+        font-size: 1.8em;
+    }
+
+    /* Marcador vertical en móviles */
+    .scoreboard {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .score {
+        font-size: 3.5em;
+    }
+
+    /* Línea de tiempo ajustada */
+    .timeline-container {
+        margin-left: 15px;
+        padding-left: 20px;
+    }
+
+    .time-tag {
+        position: relative; /* Ya no flota a la izquierda, queda arriba del texto */
+        left: 0;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    /* Grilla de noticias a 1 sola columna */
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Ajustes de Footer */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
