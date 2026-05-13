@@ -439,7 +439,7 @@ input[type="text"], input[type="email"], select, textarea {
     }
 
     .news-grid {
-        grid-template-columns: repeat(2, 1fr); /* Pasa de 3 columnas a 2 */
+        grid-template-columns: repeat(2, 1fr); 
     }
 
     .footer-container {
@@ -449,17 +449,14 @@ input[type="text"], input[type="email"], select, textarea {
 
 /* MOBILE: Pantallas menores a 768px */
 @media (max-width: 767px) {
-    /* Ajustes de Header */
     .sub-nav {
-        display: none; /* Se oculta para limpiar la pantalla en móvil */
+        display: none; 
     }
 
-    /* Ajustes de Títulos */
     h1 {
         font-size: 1.8em;
     }
 
-    /* Marcador vertical en móviles */
     .scoreboard {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -469,25 +466,25 @@ input[type="text"], input[type="email"], select, textarea {
         font-size: 3.5em;
     }
 
-    /* Línea de tiempo ajustada */
+
     .timeline-container {
         margin-left: 15px;
         padding-left: 20px;
     }
 
     .time-tag {
-        position: relative; /* Ya no flota a la izquierda, queda arriba del texto */
+        position: relative; 
         left: 0;
         display: inline-block;
         margin-bottom: 10px;
     }
 
-    /* Grilla de noticias a 1 sola columna */
+
     .news-grid {
         grid-template-columns: 1fr;
     }
 
-    /* Ajustes de Footer */
+   
     .footer-container {
         flex-direction: column;
         text-align: center;
